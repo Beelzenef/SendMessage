@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/text_InfoMsg"
+        android:text="@string/text_CualEsTuMsg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -18,9 +18,10 @@
         app:layout_constraintVertical_bias="0.451" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editT_MsgToSend"/>
+        android:layout_width="238dp"
+        android:layout_height="66dp"
+        android:id="@+id/editT_MsgToSend"
+        android:layout_marginRight="8dp" />
 
     <Button
         android:layout_width="wrap_content"
