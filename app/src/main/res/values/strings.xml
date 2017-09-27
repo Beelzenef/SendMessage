@@ -1,5 +1,15 @@
 <resources>
+
     <string name="app_name">SendMessage</string>
-    <string name="text_CualEsTuMsg">¿Cual es tu mensaje?</string>
-    <string name="text_EnviarMsg">Enviar mensaje</string>
+
+    <!-- Enviar mensaje -->
+    <string name="txtv_Message">¿Cual es tu mensaje?</string>
+    <string name="btn_SendMsg">Enviar mensaje</string>
+    <string name="txtV_Usuario">¿Cual es tu usuario?</string>
+
+    <!-- Ver mensaje -->
+    <string name="title_viewMsg">Ver mensaje</string>
+    <string name="txtV_ViewUser">El usuario</string>
+    <string name="txtV_ViewMessage">ha enviado el siguiente mensaje:</string>
+
 </resources>
