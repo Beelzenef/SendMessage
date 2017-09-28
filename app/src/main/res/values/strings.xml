@@ -9,7 +9,6 @@
 
     <!-- Ver mensaje -->
     <string name="title_viewMsg">Ver mensaje</string>
-    <string name="txtV_ViewUser">El usuario</string>
-    <string name="txtV_ViewMessage">ha enviado el siguiente mensaje:</string>
+    <string name="txtV_ViewMsg">El usuario <u>%1$s</u> ha enviado el siguiente mensaje:</string>
 
 </resources>

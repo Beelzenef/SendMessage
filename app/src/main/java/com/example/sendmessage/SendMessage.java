@@ -6,10 +6,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+/**
+ *  app SendMessage
+ *  @author Elena G (Beelzenef)
+ */
+
 public class SendMessage extends AppCompatActivity {
 
     // Instancias a utilizar
     private EditText edtT_Message;
+    private EditText edtT_User;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +24,7 @@ public class SendMessage extends AppCompatActivity {
 
         // Obteniendo edtText para mensaje
         edtT_Message = (EditText) findViewById(R.id.edtT_Message);
+        edtT_User = (EditText) findViewById(R.id.edtT_User);
     }
 
     public void manageOnClick(View v)
@@ -26,16 +33,16 @@ public class SendMessage extends AppCompatActivity {
         switch (v.getId()) {
             case R.id.btn_SendMsg:
                 enviarMsg();
-                break;
-        }
+                break;        }
     }
 
     void enviarMsg()
     {
         // Recoger usuario y mensaje
-        // Crear Bundle y añadir el mensaje
+        // Crear Bundle y añadir mensaje + usuario
         Bundle bndl = new Bundle();
         bndl.putString("msg", edtT_Message.getText().toString());
+        bndl.putString("user", edtT_User.getText().toString());
 
         // Crear y cargar Intent con Bundle
         Intent intnt = new Intent(SendMessage.this, ViewMsg.class);
