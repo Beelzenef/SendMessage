@@ -5,7 +5,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class ViewMsg extends AppCompatActivity {
+/**
+ *  Esta Clase recibe dos strings desde otra Activity
+ *  @author Elena G (Beelzenef)
+ *
+ *  @see android.content.Intent
+ *  @see android.os.Bundle
+ */
+public class ViewMsgActivity extends AppCompatActivity {
 
     // Instancias a usar
     private TextView txtV_ViewMessage;
